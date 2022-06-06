@@ -4,7 +4,7 @@ public class Exam25 {
     }
 
     public static void main(String[] args) {
-        short[] lotto = {0, 0, 0, 0, 0, 0};
+        short[] Num = {0, 0, 0, 0, 0, 0};
         short i, k, num;
         char dupl = 'N';
 
@@ -14,17 +14,17 @@ public class Exam25 {
             num = getNumber();
 
             for (k = 0; k < 6; k++)
-                if (lotto[k] == num)
+                if (Num[k] == num)
                     dupl = 'Y';
 
                 if (dupl == 'N')
-                    lotto[i++] = num;
+                    Num[i++] = num;
                 else
                     dupl = 'N';
             }
             System.out.println("추첨된 번호 ==> ");
             for (i = 0; i < 6; i++) {
-                System.out.printf("%d ", lotto[i]);
+                System.out.printf("%d ", Num[i]);
             }
         }
     }
